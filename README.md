@@ -1,1 +1,5 @@
 # fair_optimization_in_pu_classification
+
+This is a repository for implementing a stochastic optimization framework for fair risk minimization in PU classificaiton.
+
+In applications of machine learning, sometimes we want to eleminate inequalized outputs for certain groups that have some sensitive attributes. For instance, when it comes to housing loan, predictors judging applicants have capability of repayment should not account for their genders or races. To make classification results uncorrelated to such atttributes, we can formulate minimization framework for training predictors. In general, ERM (Empirical Risk Minimization) is used to obtain a predictor which minimizes the empirical risk for training data. In fair risk minimization, we can add a regularization term which incorporates mutual information. In this repository, we address the ERMI (exponential Rényi mutual information) between the predictors' outputs and sensitive attributes of training data. As we add this term for ERM, the framework returns the predictor which would make outputs uncorrelated to the senstive attributes.
