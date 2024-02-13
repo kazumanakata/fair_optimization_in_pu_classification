@@ -32,6 +32,8 @@ Here, the first argument specifies if it is PU scenario or not and the second ar
 
 ## Example result
 After running `main.py`, 8 figures are shown and `.npz` files are stored in `experiment_result/`.
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/e64ae5a2-f502-4b71-b192-8416bf8ef5a2"><br>
+
 
 ## Reference
 1. Mehryar Mohri Afshin Rostamizadeh, and Ameet Talwalkar: Foundations of Machine Learning., MIT Press, Second Edition, 2018.
