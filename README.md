@@ -11,6 +11,7 @@ In supervised machine learning, collecting an enormous amount of labeled data fo
 ## Fairness in PU classification
 Employing PU classification in real world scenarios may lead to a higher possibities resulting in unfair predictors compared to ordinary PN (Positive and Negative) classification. For example, in PU classification, the framework identifies training samples likely to be negative class  based on positively labeled samples. If some groups are labeled for positive class based on sensitive attributes, other groups might naively be considered as negative class based on the same sensitive attributes. To prevent predictors from being unfair in PU classification, we consolidate a fairness reguralizer term into PU classification framework.
 
+## Reference
 1. Mehryar Mohri Afshin Rostamizadeh, and Ameet Talwalkar: Foundations of Machine Learning., MIT Press, Second Edition, 2018.
-1. Andrew Lowy, Sina Baharlouei, Rakesh Pavan, Meisam Razaviyayn, Ahmad Beirami: A Stochastic Optimization Framework for Fair Risk Minimization., Transactions on Machine Learning Research, 2022
-1. Ryuichi Kiryo, Gang Niu, Marthinus C. du Plessis, Masashi Sugiyama: Positive-Unlabeled Learning with Non-Negative Risk Estimator, 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, US
+1. Andrew Lowy, Sina Baharlouei, Rakesh Pavan, Meisam Razaviyayn, and Ahmad Beirami: A Stochastic Optimization Framework for Fair Risk Minimization., Transactions on Machine Learning Research, 2022
+1. Ryuichi Kiryo, Gang Niu, Marthinus C. du Plessis, and Masashi Sugiyama: Positive-Unlabeled Learning with Non-Negative Risk Estimator, 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, US
