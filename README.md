@@ -13,7 +13,7 @@ Employing PU classification in real world scenarios may lead to a higher possibi
 
 ## Codes
 - 'fermi.py' has a torch implementation of the regularizer for fair risk minimization.
-- 'main.py' is a main code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are re-labeled as positive class and odd numbers are re-labeled as negative class.
+- 'execute.py' is a code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are labeled as positive class and odd numbers are labeled as negative class. Also a value one is encoded for images of {2, 5, 8} and a value zero is encoded for images of {0, 1, 3, 4, 6, 7, 9} as binary sensitive attributes, mixing positive and negative classes. In a PU classification setting, by default 1000 positive samples and 59000 unlabeled samples are used for training a predictor.
 
 ## Requirements
 - Python ==
