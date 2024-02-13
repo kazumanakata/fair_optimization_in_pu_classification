@@ -11,6 +11,18 @@ In supervised machine learning, collecting an enormous amount of labeled data fo
 ## Fairness in PU classification
 Employing PU classification in real world scenarios may lead to a higher possibities resulting in unfair predictors compared to ordinary PN (Positive and Negative) classification. For example, in PU classification, the framework identifies training samples likely to be negative class  based on positively labeled samples. If some groups are labeled for positive class based on sensitive attributes, other groups might naively be considered as negative class based on the same sensitive attributes. To prevent predictors from being unfair in PU classification, we consolidate a fairness reguralizer term into PU classification framework.
 
+## Codes
+- 'fermi.py' has a torch implementation of the regularizer for fair risk minimization.
+- 'main.py' is a main code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are re-labeled as positive class and odd numbers are re-labeled as negative class.
+
+## Requirements
+- Python ==
+- Numpy ==
+- Torch ==
+- Fairlearn ==
+- Matplotlib ==
+- Pandas ==
+
 ## Reference
 1. Mehryar Mohri Afshin Rostamizadeh, and Ameet Talwalkar: Foundations of Machine Learning., MIT Press, Second Edition, 2018.
 1. Andrew Lowy, Sina Baharlouei, Rakesh Pavan, Meisam Razaviyayn, and Ahmad Beirami: A Stochastic Optimization Framework for Fair Risk Minimization., Transactions on Machine Learning Research, 2022
