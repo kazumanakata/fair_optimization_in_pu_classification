@@ -12,18 +12,19 @@ In supervised machine learning, collecting an enormous amount of labeled data fo
 Employing PU classification in real world scenarios may lead to a higher possibities resulting in unfair predictors compared to ordinary PN (Positive and Negative) classification. For example, in PU classification, the framework identifies training samples likely to be negative class  based on positively labeled samples. If some groups are labeled for positive class based on sensitive attributes, other groups might naively be considered as negative class based on the same sensitive attributes. To prevent predictors from being unfair in PU classification, we consolidate a fairness reguralizer term into PU classification framework.
 
 ## Codes
-- 'fermi.py' has a torch implementation of the regularizer for fair risk minimization.
-- 'execute.py' is a code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are labeled as positive class and odd numbers are labeled as negative class. Also a value one is encoded for images of {2, 5, 8} and a value zero is encoded for images of {0, 1, 3, 4, 6, 7, 9} as binary sensitive attributes, mixing positive and negative classes. In a PU classification setting, by default 1000 positive samples and 59000 unlabeled samples are used for training a predictor.
+- `fermi.py` has a torch implementation of the regularizer for fair risk minimization.
+- `execute.py` is a code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are labeled as positive class and odd numbers are labeled as negative class. Also a value one is encoded for images of {2, 5, 8} and a value zero is encoded for images of {0, 1, 3, 4, 6, 7, 9} as binary sensitive attributes, mixing positive and negative classes. In a PU classification setting, by default 1000 positive samples and 59000 unlabeled samples are used for training a predictor.
 
 ## Requirements
-- Python ==
-- Numpy ==
-- Torch ==
-- Fairlearn ==
-- Matplotlib ==
-- Pandas ==
+- Python == 3.9.13
+- Numpy == 1.21.5
+- Torch == 1.13.1
+- Fairlearn == 0.8.0
+- Matplotlib == 3.5.2
+- Pandas == 1.4.4
 
 ## Reference
 1. Mehryar Mohri Afshin Rostamizadeh, and Ameet Talwalkar: Foundations of Machine Learning., MIT Press, Second Edition, 2018.
-1. Andrew Lowy, Sina Baharlouei, Rakesh Pavan, Meisam Razaviyayn, and Ahmad Beirami: A Stochastic Optimization Framework for Fair Risk Minimization., Transactions on Machine Learning Research, 2022
-1. Ryuichi Kiryo, Gang Niu, Marthinus C. du Plessis, and Masashi Sugiyama: Positive-Unlabeled Learning with Non-Negative Risk Estimator, 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, US
+1. Andrew Lowy, Sina Baharlouei, Rakesh Pavan, Meisam Razaviyayn, and Ahmad Beirami: A Stochastic Optimization Framework for Fair Risk Minimization., Transactions on Machine Learning Research, 2022.
+1. Ryuichi Kiryo, Gang Niu, Marthinus C. du Plessis, and Masashi Sugiyama: Positive-Unlabeled Learning with Non-Negative Risk Estimator, 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, US.
+1. Y. LeCun, L. Bottou, Y. Bengio and P. Haffner: Gradient-Based Learning Applied to Document Recognition., Proceedings of the IEEE, 86(11):2278-2324, November 1998.
