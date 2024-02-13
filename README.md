@@ -32,8 +32,24 @@ Here, the first argument specifies if it is PU scenario or not and the second ar
 
 ## Example result
 After running `main.py`, 8 figures are shown and `.npz` files are stored in `experiment_result/`.
-<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/e64ae5a2-f502-4b71-b192-8416bf8ef5a2"><br>
 
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/e64ae5a2-f502-4b71-b192-8416bf8ef5a2"><br>
+This is a graph showing empirical loss.
+
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/af6a6029-ad01-453b-8cc4-3df788f826c2"><br>
+This is a graph showing reguralization loss.
+
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/d9b3157f-870b-49fd-8f98-77f2e3f409b2"><br>
+This is a graph showing expected loss.
+
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/09e4f30a-1d0f-4636-a65a-1b4ea2207214"><br>
+This is a graph showing accuracy for training data.
+
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/21ee84a6-b891-45b4-b99a-4e26650d6602"><br>
+This is a graph showing accuracy for test data.
+
+<img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/5195e0fa-ea89-431f-a3a5-c62fc9908d87"><br>
+This is a graph showing  ositive class accuracy.
 
 ## Reference
 1. Mehryar Mohri Afshin Rostamizadeh, and Ameet Talwalkar: Foundations of Machine Learning., MIT Press, Second Edition, 2018.
