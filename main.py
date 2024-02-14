@@ -6,11 +6,11 @@ import torch
 from execute import executer
 
 def main(arguments):
-    parser = argparse.ArgumentParser(description='description')
+    parser = argparse.ArgumentParser(description='An implementation of a stochastic optimization framework for fair risk minimization in PU classification')
     
-    parser.add_argument('pu_train', default=True, type=bool, help='description')
-    parser.add_argument('epochs', default=200, type=int, help='description')
-    parser.add_argument('--p_num', default=1000, type=int, help='description')
+    parser.add_argument('pu_train', default=True, type=bool, help='True: PU classification, False: PN classification')
+    parser.add_argument('epochs', default=200, type=int, help='# of training epochs')
+    parser.add_argument('--p_num', default=1000, type=int, help='# of positively labeled samples in training data')
     
     args = parser.parse_args(arguments)
 
