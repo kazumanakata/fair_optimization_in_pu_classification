@@ -12,7 +12,7 @@ In supervised machine learning, collecting an enormous amount of labeled data fo
 Employing PU classification in real world scenarios may lead to a higher possibilities resulting in unfair predictors compared to ordinary PN (Positive and Negative) classification. For example, in PU classification, the framework identifies training samples likely to be negative class  based on positively labeled samples. If some groups are labeled for positive class based on sensitive attributes, other groups might naively be considered as negative class based on the same sensitive attributes. To prevent predictors from being unfair in PU classification, we consolidate a fairness regularizer term into PU classification framework.
 
 ## Codes
-- Please unzip `train_csv.zip` before running the code (Compressed due to its file size).
+- Please unzip `mnist_train.zip` before running the code (Compressed due to its file size).
 - `fermi.py` has a torch implementation of the regularizer for fair risk minimization.
 - `execute.py` is a code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are labeled as positive class and odd numbers are labeled as negative class. Also a value one is encoded for images of {2, 5, 8} and a value zero is encoded for images of {0, 1, 3, 4, 6, 7, 9} as binary sensitive attributes, mixing positive and negative classes. In a PU classification setting, by default 1000 positive samples and 59000 unlabeled samples are used for training a predictor. To investigate the effectiveness of fairness regularizer, the coefficient *lambda* for it is changed to values from {0, 1, 2, 3, 4, 5}. Here, *lambda* decides how much the predictor considers the regularization term in training.
 
