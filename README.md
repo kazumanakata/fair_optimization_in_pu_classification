@@ -34,22 +34,29 @@ Here, the first argument specifies if it is PU scenario or not and the second ar
 After running `main.py`, 8 figures are shown and `.npz` files are stored in `experiment_result/`.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/e64ae5a2-f502-4b71-b192-8416bf8ef5a2"><br>
-This is a graph showing empirical loss.
+This is a graph showing empirical loss.<br>
+As the *lambda* takes higher values, the predictor would become less accurate for classifying training data and empirical loss takes higher values.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/af6a6029-ad01-453b-8cc4-3df788f826c2"><br>
-This is a graph showing reguralization loss.
+This is a graph showing reguralization loss.<br>
+As the *lambda* takes higher values, the predictor would become more fair for sensitive attributes and regularization loss takes lower values.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/d9b3157f-870b-49fd-8f98-77f2e3f409b2"><br>
-This is a graph showing expected loss.
+This is a graph showing expected loss.<br>
+As the *lambda* takes higher values, the predictor would become less accurate for classifying test data and expected loss takes higher values.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/09e4f30a-1d0f-4636-a65a-1b4ea2207214"><br>
-This is a graph showing accuracy for training data.
+This is a graph showing accuracy for training data.<br>
+As the *lambda* takes higher values, the predictors' accuracy for training data increases.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/21ee84a6-b891-45b4-b99a-4e26650d6602"><br>
-This is a graph showing accuracy for test data.
+This is a graph showing accuracy for test data.<br>
+In contrast to the accuracy for training data, as the *lambda* takes higher values, the predictors' accuracy for test data decreases.<br>
+This indicates the trained predictor tends to output negative labels because it aims to be fair for sensitive attributes {1, 0}.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/5195e0fa-ea89-431f-a3a5-c62fc9908d87"><br>
-This is a graph showing acccuraacy for positive class in test data.
+This is a graph showing acccuraacy for positive class in test data.<br>
+
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/b0712289-b7d3-47bd-a89a-1fc9dd8efb05"><br>
 This is a graph showing acccuraacy for negattive class in test data.
