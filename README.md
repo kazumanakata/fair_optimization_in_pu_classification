@@ -13,7 +13,7 @@ Employing PU classification in real world scenarios may lead to a higher possibi
 
 ## Codes
 - `fermi.py` has a torch implementation of the regularizer for fair risk minimization.
-- `execute.py` is a code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are labeled as positive class and odd numbers are labeled as negative class. Also a value one is encoded for images of {2, 5, 8} and a value zero is encoded for images of {0, 1, 3, 4, 6, 7, 9} as binary sensitive attributes, mixing positive and negative classes. In a PU classification setting, by default 1000 positive samples and 59000 unlabeled samples are used for training a predictor. To investigate the effectiveness of fairness reguralizer, the coefficient *lambda* for it is changed to values from {0, 1, 2, 3, 4, 5}. Here, *lambda* decides how much the predictor considers the reguralization term in training. ***You can see that as the lambda takes higher values, the predictor tries to be fair for sensitive attributes. As a result, it tends to output negative class regardless of input samples' features.***
+- `execute.py` is a code for training a fair predictor in PU classification. MNIST [4] are used in a way that even numbers are labeled as positive class and odd numbers are labeled as negative class. Also a value one is encoded for images of {2, 5, 8} and a value zero is encoded for images of {0, 1, 3, 4, 6, 7, 9} as binary sensitive attributes, mixing positive and negative classes. In a PU classification setting, by default 1000 positive samples and 59000 unlabeled samples are used for training a predictor. To investigate the effectiveness of fairness reguralizer, the coefficient *lambda* for it is changed to values from {0, 1, 2, 3, 4, 5}. Here, *lambda* decides how much the predictor considers the reguralization term in training.
 
 You can run the code by
 ```
@@ -31,6 +31,8 @@ Here, the first argument specifies if it is PU scenario or not and the second ar
 - Pandas == 1.4.4
 
 ## Example result
+***You can see that as the lambda takes higher values, the predictor tries to be fair for sensitive attributes. As a result, it tends to output negative class regardless of input samples' features.***
+
 After running `main.py`, 8 figures are shown and `.npz` files are stored in `experiment_result/`.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/e64ae5a2-f502-4b71-b192-8416bf8ef5a2"><br>
