@@ -65,7 +65,7 @@ This is a graph showing accuracy for positive class in test data.<br>
 This is a graph showing accuracy for negative class in test data.
 
 <img src="https://github.com/kazumanakata/fair_optimization_in_pu_classification/assets/121463877/9c72fa7d-846e-43e3-891c-2b73944bb5fb"><br>
-This is a graph showing domestic parity for test data.
+This is a graph showing demographic parity for test data.
 
 ## Reference
 1. Mehryar Mohri Afshin Rostamizadeh, and Ameet Talwalkar: Foundations of Machine Learning., MIT Press, Second Edition, 2018.
